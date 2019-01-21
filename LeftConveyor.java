@@ -9,7 +9,7 @@ import greenfoot.*;
 public class LeftConveyor extends Platform
 {   
     private GreenfootImage r1 = new GreenfootImage("conveyor1.jpg");
-    private GreenfootImage r2 = new GreenfootImage("conveyor12.jpg");
+    private GreenfootImage r2 = new GreenfootImage("conveyor2.jpg");
     private GreenfootImage r3 = new GreenfootImage("conveyor3.jpg");
     private GreenfootImage r4 = new GreenfootImage("conveyor4.jpg");
     private int frame = 1;

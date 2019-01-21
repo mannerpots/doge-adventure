@@ -19,31 +19,31 @@ public class FactoryLevel extends Level
     }
     public void populate()
     {
-        String[] map = new String[] {"123                       s             ",
-                                     "d m           c    m                    ",
-                                     "ppp                                     ",
+        String[] map = new String[] {"123                                     ",
                                      "                                        ",
                                      "                                        ",
-                                     "                                        ",
-                                     "                                        ",
-                                     "                                        ",
-                                     "         pp                             ",
-                                     "                         k              ",
-                                     "             ppppppppp                  ",
-                                     "                                        ",
-                                     "   f    pp                              ",
-                                     "               m                        ",
-                                     "    m                                   ",
-                                     "             pppp         m             ",
-                                     "  ppppp                                 ",
-                                     "                         ppp            ",
-                                     "                                        ",
-                                     "    m                    m              ",
-                                     "         w        w                     ",
-                                     "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"};
+                                     "                            mm    e     ",
+                                     "             l l l        bbbbbbbbb     ",
+                                     " mm                  b                  ",
+                                     " bb                  b                  ",
+                                     "                     b m e e mm     e e ",
+                                     "                     bbbbbbbbbbbbmmbbbbb",
+                                     "             r r     bbbbbbbbbbbbmmbbbbb",
+                                     "                     bbbbbbbbbbbbmmbbbbb",
+                                     "  e                  bbbbbbbbbbbbmmbbbbb",
+                                     "bbbbbbbb             bbbbbbbbbbbbmmbbbbb",
+                                     "                     b                  ",                                 
+                                     "                     b                  ",
+                                     "            l l l    b    bbbbbbbbbbbbbb",
+                                     "                     b                  ",
+                                     "                     b                  ",
+                                     "          m  e       b                  ",
+                                     "       r r r r       b               k  ",
+                                     " c          e   mmmmmb       e          ",
+                                     "bbbbbbbbbbbbbbbbbbbbbbb    l      r   bb"};
         for (int i=0; i<map.length; i++) for (int j=0; j<map[i].length(); j++)
             {
-                int kind = "cbpwmdksf123".indexOf(""+map[i].charAt(j));
+                int kind = "cbrlmeksf123".indexOf(""+map[i].charAt(j));
                 if (kind < 0) continue;
                 Actor actor = null;
                 if (kind == 0) actor = new MainChar();
